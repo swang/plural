@@ -1,0 +1,22 @@
+{
+  "name": "plural",
+  "version": "0.1.0",
+  "description": "(mostly) rule-based plural library",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swang/plural"
+  },
+  "keywords": [
+    "plural",
+    "rule-based"
+  ],
+  "dependencies" : {
+    "mocha" : "~1.13.0"
+  },
+  "author": "Shuan Wang",
+  "license": "MIT"
+}
