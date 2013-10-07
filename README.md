@@ -23,8 +23,7 @@ zebras
 zebras
 ```
 
-## you can also force it to monkeypatch onto the String prototype
-
+you can also force it to monkeypatch onto the String prototype
 ```js
 var plural = require('plural')
 plural.monkeyPatch()
@@ -44,6 +43,3 @@ you can remove it from the String prototype by using `plural.unmonkeyPatch()`
 
 # license
 MIT
-
-# author
-Shuan Wang <shuanwang@gmail.com>
