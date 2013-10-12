@@ -14,7 +14,7 @@
     "plural",
     "rule-based"
   ],
-  "dependencies" : {
+  "devDependencies" : {
     "mocha" : "~1.13.0"
   },
   "author": "Shuan Wang",
