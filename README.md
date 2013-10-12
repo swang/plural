@@ -1,5 +1,5 @@
 # plural
-Plural is a (mostly) rule-based plural library for node.js
+Plural is a rule-based plural library for node.js
 
 # install
 

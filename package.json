@@ -1,7 +1,7 @@
 {
   "name": "plural",
   "version": "0.1.0",
-  "description": "(mostly) rule-based plural library",
+  "description": "rule-based plural library",
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js"
