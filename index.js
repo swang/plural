@@ -42,9 +42,18 @@ addRule(/(fe?$)/i, function(w, regex) {
   return w.replace(regex, "ves")
 })
 
-addRule("criterion", "criteria");
+addRule("criterion", "criteria")
+addRule("bacterium", "bacteria")
 addRule("memo", "memos")
 addRule("cello", "cellos")
+addRule("die", "dice")
+addRule("goose", "geese")
+addRule("mouse", "mice")
+addRule("person", "people")
+
+addRule(/^(?:wo)?man$/i, function(w) { return w.replace(/a/, 'e') })
+
+addRule(/bison|cod|deer|fowl|halibut|moose|sheep|kudo|premises|shambles/i, function(w) { return w })
 
 function plural(word, num) {
   var lastTwo = word.substr(-2).toLowerCase()
