@@ -4,10 +4,10 @@ var plural = require("./index")
 describe('test monkey patching', function() {
   describe('removing monkey patching', function() {
     it('should not work', function() {
-      plural.unmonkeyPatch()
-      assert.throws(function() { new String("test").plural() }, TypeError, "plural should not be monkeypatched into String")
       plural.monkeyPatch()
       assert.doesNotThrow(function() { new String("test").plural() }, "plural should be monkeypatched into String")
+      plural.unmonkeyPatch()
+      assert.throws(function() { new String("test").plural() }, TypeError, "plural should not be monkeypatched into String")
     })
   })
   describe('plurals match', function() {
