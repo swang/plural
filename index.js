@@ -95,3 +95,5 @@ module.exports.monkeyPatch = function() {
     throw new Error("Unable to add plural function to String object")
   }
 }
+
+module.exports.VERSION = require('package').version
