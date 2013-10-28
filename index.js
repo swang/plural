@@ -56,9 +56,7 @@ addRule(/^(?:wo)?man$/i, function(w) { return w.replace(/a/, 'e') })
 addRule(/bison|cod|deer|fowl|halibut|moose|sheep|kudo|premises|shambles/i, function(w) { return w })
 
 function plural(word, num) {
-  var lastTwo = word.substr(-2).toLowerCase()
-    , vowels = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"]
-    , i
+  var i
     , rule
 
   if (num !== 1 || num === undefined) {
@@ -82,11 +80,18 @@ function plural(word, num) {
 module.exports = plural
 
 module.exports.addRule = addRule
+
 module.exports.unmonkeyPatch = function() {
   String.prototype.plural = null;
 }
+
 module.exports.monkeyPatch = function() {
-  String.prototype.plural = function(num) {
-    return plural(this, num)
+  if (String.prototype.plural === undefined) {
+    String.prototype.plural = function(num) {
+      return plural(this, num)
+    }
+  }
+  else {
+    throw new Error("Unable to add plural function to String object")
   }
 }
