@@ -1,6 +1,8 @@
 # plural
 Plural is a rule-based plural library for node.js
 
+[![Build Status](https://travis-ci.org/swang/plural.png?branch=master)](https://travis-ci.org/swang/plural)
+
 # install
 
 ```
