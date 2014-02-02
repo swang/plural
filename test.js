@@ -98,6 +98,6 @@ describe('plurals match', function() {
     assert.equal(plural("TesT"), "TesTs")
     assert.equal(plural("pennY"), "pennies")
     assert.equal(plural("PeNnY"), "PeNnies")
-    assert.equal(plural("Kudos"), "KudoS")
+    assert.equal(plural("KudoS"), "KudoS")
   })
 })
