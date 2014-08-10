@@ -2,15 +2,6 @@
 
 var rules = [];
 
-// helper functions
-function endsWith(str, substr, caseSensitive) {
-  if (caseSensitive !== true) {
-    substr = substr.toLowerCase()
-    str = str.toLowerCase()
-  }
-  return (substr === str.substr(-1 * substr.length))
-}
-
 function type(obj) {
   return Object.prototype.toString.call(obj).slice(8,-1)
 }
