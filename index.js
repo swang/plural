@@ -17,6 +17,7 @@ function type(obj) {
 
 function addRule(match, result) {
   rules.unshift([match, result])
+  return this
 }
 
 // words like cherry, where a word ends in a y, but the letter before the y is a consonant
