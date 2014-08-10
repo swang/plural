@@ -11,6 +11,7 @@ describe('test monkey patching', function() {
     })
   })
 })
+
 describe('plurals match', function() {
   it('should match plurals', function() {
     assert.equal(plural("test"), "tests")
@@ -99,5 +100,11 @@ describe('plurals match', function() {
     assert.equal(plural("pennY"), "pennies")
     assert.equal(plural("PeNnY"), "PeNnies")
     assert.equal(plural("KudoS"), "KudoS")
+  })
+})
+
+describe('addRule should return plural construct', function() {
+  it('should be equal', function() {
+    assert.equal(plural.addRule(/garababble/i, function(w) { return w }), plural)
   })
 })
