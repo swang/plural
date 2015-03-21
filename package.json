@@ -15,7 +15,7 @@
     "rule-based"
   ],
   "devDependencies" : {
-    "mocha" : "~1.13.0"
+    "mocha": "~2.0.0"
   },
   "author": "Shuan Wang",
   "license": "MIT"

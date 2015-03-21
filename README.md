@@ -14,9 +14,9 @@ npm install plural
 ```js
 var plural = require('plural')
 
-console.log(plural("zebra", 1)) // returns singular 'zebra'
-console.log(plural("zebra", 2)) // returns 'zebras'
-console.log(plural("zebra")) // returns 'zebras' (if no parameters, always returns plural)
+console.log(plural('zebra', 1)) // returns singular 'zebra'
+console.log(plural('zebra', 2)) // returns 'zebras'
+console.log(plural('zebra')) // returns 'zebras' (if no parameters, always returns plural)
 ```
 
 ```
@@ -30,9 +30,9 @@ you can also force it to monkeypatch onto the String prototype
 var plural = require('plural')
 plural.monkeyPatch()
 
-console.log("zebra".plural(1))
-console.log("zebra".plural(2))
-console.log("zebra".plural())
+console.log('zebra'.plural(1))
+console.log('zebra'.plural(2))
+console.log('zebra'.plural())
 ```
 
 ```
