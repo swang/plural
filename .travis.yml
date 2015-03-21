@@ -1,9 +1,9 @@
 language: node_js
 node_js:
-  - "0.11"
+  - "0.12"
   - "0.10"
   - "0.8"
-  - iojs-v1.0.4
+  - "iojs"
 notifications:
   email:
     - shuanwang@gmail.com
