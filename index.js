@@ -1,6 +1,6 @@
 'use strict';
 
-var rules = [];
+var rules = []
 
 function type(obj) {
   return Object.prototype.toString.call(obj).slice(8, -1)
@@ -68,7 +68,7 @@ function plural(word, num) {
 
     return word + 's'
   }
-  return word;
+  return word
 }
 
 module.exports = plural

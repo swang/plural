@@ -1,5 +1,5 @@
-/* global it: false, describe: false */
 'use strict';
+/* global it: false, describe: false */
 
 var plural = require('./index')
   , assert = require('assert')
