@@ -34,6 +34,7 @@ describe('plurals match', function() {
     assert.equal(plural('memo'), 'memos')
     assert.equal(plural('hero'), 'heroes')
     assert.equal(plural('omen'), 'omens')
+    assert.equal(plural('chilli'), 'chillies')
   })
 
   it('should match greek/latin plurals', function() {
