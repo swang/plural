@@ -16,7 +16,7 @@ function addRule(match, result) {
 addRule(/[^aeiou]y$|quy$/i, function(w) { return w.substr(0, w.length - 1) + 'ies' })
 
 // words that end with ch, x, s append 'es'
-addRule(/x$|ch$|s$/i, function(w) { return w + 'es' })
+addRule(/x$|ch$|s$|i$/i, function(w) { return w + 'es' })
 
 // words that maintain latin/greek plural
 addRule(/nucleus|syllabus|focus|fungus|cactus/i, function(w) { return w.substr(0, w.length - 2) + 'i' });
