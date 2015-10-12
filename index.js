@@ -44,6 +44,7 @@ addRule('die', 'dice')
 addRule('goose', 'geese')
 addRule('mouse', 'mice')
 addRule('person', 'people')
+addRule('chilli', 'chillies')
 
 addRule(/^(?:wo)?man$/i, function(w) { return w.replace(/a/, 'e') })
 
