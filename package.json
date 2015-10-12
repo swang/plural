@@ -1,6 +1,6 @@
 {
   "name": "plural",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "rule-based plural library",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "plural",
     "rule-based"
   ],
-  "devDependencies" : {
+  "devDependencies": {
     "mocha": "~2.0.0"
   },
   "author": "Shuan Wang",
