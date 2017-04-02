@@ -48,7 +48,7 @@ addRule('chilli', 'chillies')
 
 addRule(/^(?:wo)?man$/i, function(w) { return w.replace(/a/, 'e') })
 
-addRule(/bison|cod|deer|fowl|halibut|moose|sheep|kudo|premises|shambles/i, function(w) { return w })
+addRule(/\b(?:bison|cod|deer|fowl|halibut|moose|sheep|kudos?|premises|shambles)\b/i, function(w) { return w })
 
 function plural(word, num) {
   var i

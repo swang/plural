@@ -82,6 +82,12 @@ describe('plurals match', function() {
     assert.equal(plural('shambles'), 'shambles')
   })
 
+  it('should not flag anything that starts with those above words', function() {
+    assert.equal(plural('zipcode'), 'zipcodes')
+    assert.equal(plural('afowl'), 'afowls')
+    assert.equal(plural('moosed'), 'mooseds')
+  })
+
   it('should handle some unique plurals', function() {
     assert.equal(plural('die'), 'dice')
     assert.equal(plural('goose'), 'geese')
