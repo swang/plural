@@ -91,4 +91,4 @@ module.exports.monkeyPatch = function() {
   }
 }
 
-module.exports.VERSION = require('./package').version
+module.exports.VERSION = require('./package.json').version
