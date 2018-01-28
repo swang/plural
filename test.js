@@ -111,7 +111,6 @@ describe('plurals match', function() {
     })
   })
 
-
   it('should handle -ics ending words', function() {
     var words = [
       'mathematics', 'statistics', 'linguistics', 'classics', 'acoustics',
@@ -120,6 +119,17 @@ describe('plurals match', function() {
       assert.equal(plural(w), w)
     })
   })
+
+  it('should make sure uncountable words aren\'t converted to plural form', function() {
+    var words = [
+      'tea', 'sugar', 'water', 'air', 'rice', 'knowledge', 'beauty',
+      'anger', 'fear', 'love', 'money', 'research', 'safety', 'evidence'
+    ]
+    words.forEach(function(w) {
+      assert.equal(plural(w), w)
+    })
+  })
+
   it('should make sure addRule works', function() {
     assert.notEqual(plural('zzz'), 'roh')
 

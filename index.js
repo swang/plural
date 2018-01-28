@@ -65,6 +65,8 @@ addRule(new RegExp('\\b(?:' + tools.concat(clothes, games, illnesses, misc).join
 // mathematics, statistics, linguistics, classics, acoustics
 addRule(/ics$/i, function(w) { return w })
 
+// uncountable
+addRule(/\b(?:tea|sugar|water|air|rice|knowledge|beauty|anger|fear|love|money|research|safety|evidence)\b/i, function(w) { return w })
 
 function plural(word, num) {
   var i
