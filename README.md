@@ -1,7 +1,9 @@
 # plural
-Plural is a rule-based plural library for node.js
+plural is a rule-based plural library for node.js
 
 [![Build Status](https://travis-ci.org/swang/plural.png?branch=master)](https://travis-ci.org/swang/plural)
+
+this library's aim is to convert most words into their plural form. it's not going to handle every single case but you can fill those in with your own rules (using `plural.addRule`)
 
 # install
 
