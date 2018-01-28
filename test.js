@@ -95,6 +95,21 @@ describe('plurals match', function() {
     assert.equal(plural('person'), 'people')
   })
 
+  it('should handle plurals that are singular', function() {
+
+    var tools = ['goggle', 'scissor', 'plier', 'tong', 'tweezer']
+    var clothes = ['trouser', 'pant', 'pantie', 'clothe']
+    var games = ['billiard', 'bowl', 'card', 'dart', 'skittle', 'draught']
+    var illnesses = ['diabete', 'measle', 'mump', 'rabie', 'ricket', 'shingle']
+    var misc = ['kudo', 'premise', 'shamble', 'glasse', 'spectacle', 'jitter',
+      'alm', 'fece', 'bowel', 'sud', 'entrail', 'electronic', 'outskirt', 'odd', 'tropic',
+      'riche', 'surrounding', 'thank', 'heroic', 'remain', 'amend'
+    ]
+
+    tools.concat(clothes, games, illnesses, misc).forEach(function(w) {
+      assert.equal(plural(w + 's'), w + 's')
+    })
+  })
   it('should make sure addRule works', function() {
     assert.notEqual(plural('zzz'), 'roh')
 

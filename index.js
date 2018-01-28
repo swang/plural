@@ -50,6 +50,18 @@ addRule(/^(?:wo)?man$/i, function(w) { return w.replace(/a/, 'e') })
 
 addRule(/\b(?:bison|cod|deer|fowl|halibut|moose|sheep|kudos?|premises|shambles)\b/i, function(w) { return w })
 
+// singular nouns that end in -s
+var tools = ['goggle', 'scissor', 'plier', 'tong', 'tweezer']
+var clothes = ['trouser', 'pant', 'pantie', 'clothe']
+var games = ['billiard', 'bowl', 'card', 'dart', 'skittle', 'draught']
+var illnesses = ['diabete', 'measle', 'mump', 'rabie', 'ricket', 'shingle']
+var misc = ['kudo', 'premise', 'shamble', 'glasse', 'spectacle', 'jitter',
+  'alm', 'fece', 'bowel', 'sud', 'entrail', 'electronic', 'outskirt', 'odd', 'tropic',
+  'riche', 'surrounding', 'thank', 'heroic', 'remain', 'amend'
+]
+addRule(new RegExp('\\b(?:' + tools.concat(clothes, games, illnesses, misc).join('|') + ')s\\b', 'i'), function(w) { return w})
+
+
 function plural(word, num) {
   var i
     , rule
