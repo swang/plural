@@ -110,6 +110,16 @@ describe('plurals match', function() {
       assert.equal(plural(w + 's'), w + 's')
     })
   })
+
+
+  it('should handle -ics ending words', function() {
+    var words = [
+      'mathematics', 'statistics', 'linguistics', 'classics', 'acoustics',
+    ]
+    words.forEach(function(w) {
+      assert.equal(plural(w), w)
+    })
+  })
   it('should make sure addRule works', function() {
     assert.notEqual(plural('zzz'), 'roh')
 

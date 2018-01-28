@@ -61,6 +61,10 @@ var misc = ['kudo', 'premise', 'shamble', 'glasse', 'spectacle', 'jitter',
 ]
 addRule(new RegExp('\\b(?:' + tools.concat(clothes, games, illnesses, misc).join('|') + ')s\\b', 'i'), function(w) { return w})
 
+// most words ending in -ics are the same in their plural form
+// mathematics, statistics, linguistics, classics, acoustics
+addRule(/ics$/i, function(w) { return w })
+
 
 function plural(word, num) {
   var i
