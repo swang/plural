@@ -48,7 +48,8 @@ addRule('chilli', 'chillies')
 
 addRule(/^(?:wo)?man$/i, function(w) { return w.replace(/a/, 'e') })
 
-addRule(/\b(?:bison|cod|deer|fowl|halibut|moose|sheep|kudos?|premises|shambles)\b/i, function(w) { return w })
+// animals w/ no plural
+addRule(/\b(?:bison|cod|deer|fowl|halibut|moose|sheep)\b/i, function(w) { return w })
 
 // singular nouns that end in -s
 var tools = ['goggle', 'scissor', 'plier', 'tong', 'tweezer']
